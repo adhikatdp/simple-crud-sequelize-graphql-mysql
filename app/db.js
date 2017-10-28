@@ -35,7 +35,7 @@ const Post = db.define('post', {
 Person.hasMany(Post);
 Post.belongsTo(Person);
 
-db.sync({force: false});/*.then(()=>{
+db.sync({force: true});.then(()=>{
 	_.times(10, ()=>{
 		return Person.create({
 			firstName: Faker.name.firstName(),
@@ -48,7 +48,7 @@ db.sync({force: false});/*.then(()=>{
 			});
 		});
 	});
-});*/
+});
 
 
 export default db;
