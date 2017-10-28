@@ -6,6 +6,7 @@ buka file app/config.js ganti sesuai dengan konfigurasi database
 
 #how to start
 ```
+npm install
 npm start
 
 ```
